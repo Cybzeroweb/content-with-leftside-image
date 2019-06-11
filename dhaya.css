@@ -11,11 +11,6 @@ body{
     
 }
 
-.container{
- width: 100%;
- margin: auto;
- overflow: hidden;
-}
 
 #main-header{
     background-color:coral;
@@ -30,6 +25,7 @@ body{
 #nav-bar ul{
     padding: 0;
     list-style: none;
+    margin: 0%;
 }
 
 #nav-bar li{
@@ -43,84 +39,74 @@ body{
     padding-right: 15px;
 }
 
-div{
-    display: block;
-    border: 6px solid #949599;
-    border-radius: 20px;
-}
-
 #showcase{
     background-image:url('images/showcase.jpg');
     background-position: center right;
-    margin-bottom: 30px;
+  
     min-height: 300px;
     text-align: center;
     color: #fff;
     font-size: 50px;
-    padding-top: 30px;
     line-height: 1.6em;
 }
 
-#main{
-    float: left;
-    width: 70%;
-    padding: 0 30px;
-    box-sizing: border-box;
-    position: relative;
+
+.container{
+    width: 100%;
+    border: 6px solid #949599;
+    border-radius: 20px;
 }
 
-#sidebar{
+
+
+.mc{
+    width: 100%;
+    padding-top:15px;
+}
+.sidebar{
+    height: 190px;
+
     float: right;
-    width: 30%;
-    padding: 10px;
+    width:29.05%;
+    padding: 3px;
     box-sizing: border-box;
     background: #333;
     color: #fff;
+    font-size: 18px;
+    text-align: center;  
     box-sizing: border-box;
-}
-
-.text,.image{
- display: inline-block;
+    border-radius: 20px;
 
 }
-.text{
-    position: absolute;
-    
-    
-}
 
-.clearfix{
-    overflow: auto;
-}
-
-.clearfix {
-    float: right;
-    margin: 0 0 1em 1em;
-    position:absolute ;
-    
-    
-  }
-
-img{
-    float: right;
+.container{
     position: relative;
+overflow: hidden;
+width: 70.009%;
 }
+
+.container,.sidebar{
+    display: inline-block;
+}
+section{
+    margin-right:310px;
+}
+
+    img {
+        float: right;
+        height: 100%;
+    
+      }
+
 
 #main-footer{
     background: #333;
-    padding: 20px;
-    margin-top: 40px;
+    position: fixed;
+    width:100%;
+
+left: 0;
+bottom: 0;
     color: #fff;
     text-align: center;
 }
 
-@media (max-width: 600px){
-    #main{
-        float: none;
-        width: 100%;
-    }
-    #sidebar{
-        float: none;
-        width: 100%;
-    }
-}
